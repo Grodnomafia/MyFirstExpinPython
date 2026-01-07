@@ -16,7 +16,7 @@ class File:
             if 'r' in self.mode or 'a' in self.mode:
                 os.makedirs(os.path.dirname(self.path), exist_ok=True)
                 self.file = open(self.path,'w',encoding= self.encod)
-                self.file.write('Записал тут текст')
+                self.file.write('Записал тут текст!')
                 self.file = open(self.path, 'r', encoding=self.encod)
             else:
                 self.file = open(self.path,self.mode,encoding=self.encod)
